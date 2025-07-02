@@ -19,7 +19,7 @@ class ImobiliariaSeeder extends Seeder
 
         // Recupera alguns IDs de endereço para associar às imobiliárias
         $endereco1 = Endereco::first(); // Pega o primeiro endereço que foi criado pelo EnderecoSeeder
-        $endereco2 = Endereco::skip(1)->first(); // Pega o segundo
+        //$endereco2 = Endereco::skip(1)->first(); // Pega o segundo
 
         Imobiliaria::create([
             'nome_fantasia' => 'Imob Prime',

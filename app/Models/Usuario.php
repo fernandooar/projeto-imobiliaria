@@ -12,6 +12,12 @@ class Usuario extends Authenticatable
     use HasFactory, Notifiable;
 
     protected $table = 'usuarios'; // Define a tabela associada ao modelo
+    
+    public function getAuthPasswordName()
+    {
+        // Substitua 'senha' pelo nome exato da sua coluna de senha
+        return 'senha';
+    }
 
     /**
      * Os atributos que não devem ser atribuídos em massa.

@@ -13,10 +13,10 @@ return [
     |
     */
     /**
-      * 'provider' => 'usuarios': Indica que o guard web usará o provedor usuarios.
-      * usuarios' => [...]: Define o provedor.
-      * 'model' => App\Models\Usuario::class: Aponta para a sua Model Usuario.
-    */
+     * 'provider' => 'usuarios': Indica que o guard web usará o provedor usuarios.
+     * usuarios' => [...]: Define o provedor.
+     * 'model' => App\Models\Usuario::class: Aponta para a sua Model Usuario.
+     */
     'defaults' => [
         'guard' => env('AUTH_GUARD', 'web'),
         'passwords' => env('AUTH_PASSWORD_BROKER', 'users'),
@@ -67,7 +67,7 @@ return [
         'usuarios' => [
             'driver' => 'eloquent',
             'model' => App\Models\Usuario::class,
-            'password' => 'senha', 
+            'password' => 'senha',
         ],
 
         // 'users' => [

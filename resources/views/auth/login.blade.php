@@ -44,6 +44,8 @@
         <div class="mt-3 text-center">
             <a href="{{ route('usuarios.create') }}">Cadastrar novo usuário</a>
         </div>
+
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
