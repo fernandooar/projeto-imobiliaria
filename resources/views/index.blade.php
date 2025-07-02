@@ -1,4 +1,4 @@
-@extends('layouts.header');
+@extends('layouts.app');
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <style>
     .glassmorphism-card {
@@ -15,9 +15,8 @@
     }
 </style>
 
-<x-componentes>
-    <x-slot name="carousel">
-        <!-- Hero Carousel -->
+@section('content')
+        <!--  Carrossel -->
         <section id="home" class="hero-carousel ">
             <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -101,9 +100,7 @@
                 </button>
             </div>
         </section>
-    </x-slot>
-
-    <x-slot name="barra_pesquisa">
+ 
         <!-- Barra de pesquisa de imóvel -->
         <section class="search-section py-4 bg-light">
             <div class="container">
@@ -146,10 +143,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </x-slot>
-
-    <x-slot name="imoveis">
+        </section>   
         <!-- Sessão de imóveis disponiveis -->
         <section id="properties" class="py-5">
             <div class="container">
@@ -312,9 +306,7 @@
                 </div>
             </div>
         </section>
-    </x-slot>
-
-    <x-slot name="corretores">
+ 
         <!-- Sessão de cards dos corretores -->
         <section id="agents" class="py-5 bg-light">
             <div class="container">
@@ -407,47 +399,5 @@
                 </div>
             </div>
         </section>
-    </x-slot>
-</x-componentes>
 
-
-@extends('layouts.footer');
-
-<!-- Login Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="loginModalLabel">Acesse sua conta</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="loginForm">
-                    <div class="mb-3">
-                        <label for="loginEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="loginPassword" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="loginPassword" name="password" required>
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="rememberMe" name="remember">
-                        <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
-                    </div>
-                    <div id="loginAlert" class="alert alert-danger d-none" role="alert"></div>
-                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
-                </form>
-                <div class="text-center mt-3">
-                    <a href="#" class="text-decoration-none">Esqueceu sua senha?</a>
-                </div>
-                <hr>
-                <div class="text-center">
-                    <p class="mb-0">Não tem uma conta? <a href="#" class="text-primary"
-                            data-bs-toggle="modal" data-bs-target="#registerModal"
-                            data-bs-dismiss="modal">Cadastre-se</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@endsection

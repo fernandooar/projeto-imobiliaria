@@ -23,10 +23,10 @@ class Usuario extends Authenticatable
         'created_at',
         'updated_at', // remover o update_at caso seja necessário edidar a data da ultima atualização
         'remember_token',
-        'tipo_usuario', // Sensivel: tipo do perfil do usuário
-        'nivel_acesso', // Sensivel: nivel de permissão
-        'ativo', // Status: ativo/inativo 
-        'imobiliaria_id',
+        // 'tipo_usuario', // Sensivel: tipo do perfil do usuário
+        // 'nivel_acesso', // Sensivel: nivel de permissão
+        // 'ativo', // Status: ativo/inativo 
+        // 'imobiliaria_id',
         //Caso tenha outros campos que NUNCA devem ser preenchiidos diretamente
     ];
 
@@ -49,8 +49,11 @@ class Usuario extends Authenticatable
     'receber_email' => 'boolean',
     'receber_sms' => 'boolean',
     'receber_whatsapp' => 'boolean',
-    'senha' => 'hashed', // <--- PRECISA ESTAR AQUI E SEM COMENTÁRIO
+    'senha' => 'hashed', // Hash sensível: senha do usuário
 ];
+
+
+
      
      // --- Relacionamentos ---
 
