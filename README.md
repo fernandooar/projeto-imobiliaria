@@ -1,4 +1,4 @@
-# Sistema de Gestão Imobiliária
+nando de # Sistema de Gestão Imobiliária
 
 <p align="center">
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
@@ -160,5 +160,6 @@ Durante o desenvolvimento, as seguintes abordagens e decisões foram tomadas par
 
 ## 🤝 Autor
 
-Seu Nome
-[Seu Contato - Ex: Link do LinkedIn, GitHub ou Email]
+Fernando Almeida
+Linkedin: https://www.linkedin.com/in/fernandooar/
+
