@@ -163,5 +163,5 @@ Durante o desenvolvimento, as seguintes abordagens e decisões foram tomadas par
 Fernando Almeida
 Linkedin: https://www.linkedin.com/in/fernandooar/
 Weslei Cardoso
-https://www.linkedin.com/in/weslei-cardoso-726930364/
+https://www.linkedin.com/in/wesleicardoso/
 
